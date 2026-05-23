@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeepUp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1 class="title">KeepUp</h1>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <button id="addCurrentBtn" class="btn btn-primary btn-block" title="Add the current page as a new tracking entry">
+        <span class="icon">+</span> Add Current
+      </button>
+      <button id="updateCurrentBtn" class="btn btn-secondary btn-block"
+        title="Update the current tracking entry with this page">
+        <span class="icon">↻</span> Update Now
+      </button>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-section">
+      <!-- Tracking List -->
+      <div id="trackingList" class="tracking-list">
+        <div class="empty-state">
+          <p>No tracking entries yet.</p>
+          <p class="hint">Start by clicking "Add Current" to track a page.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Management -->
+    <div class="data-management">
+      <button id="exportBtn" class="btn btn-tertiary btn-small" title="Export all tracking data and history as JSON">
+        Export Data
+      </button>
+      <button id="importBtn" class="btn btn-tertiary btn-small" title="Import previously exported tracking data">
+        Import Data
+      </button>
+      <input type="file" id="importFile" style="display: none;" accept=".json" />
+    </div>
+
+    <!-- Status Message -->
+    <div id="statusMessage" class="status-message"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
