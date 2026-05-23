@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Smart bookmarking for sequential content. Track manga chapters, course lectures, episodes, and more with automatic updates.",
   "author": "Matteo Camillo",
-  "homepage_url": "https://github.com/yourusername/keepup",
+  "homepage_url": "https://github.com/MatteoCamillo-code/keepup",
   "icons": {
     "16": "icons/icon-16.png",
     "48": "icons/icon-48.png",
@@ -33,10 +33,12 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "m.camillo.dev@pm.me",
-      "strict_min_version": "109.0",
+      "id": "usermail@mail.com",
+      "strict_min_version": "140.0",
       "data_collection_permissions": {
-        "required": ["technical"]
+        "required": [
+          "none"
+        ]
       }
     }
   }
